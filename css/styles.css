@@ -29,8 +29,9 @@ p {
 
 #title-section {
 	background: #ff4c68;
-	max-height: 768;
+	/*max-height: 700px;*/
 	color: white;
+
 }
 
 .navbar-brand {
@@ -44,6 +45,7 @@ p {
 
 .container-fluid {
 	padding: 1% 15%;
+
 }
 
 .btn {
@@ -54,24 +56,30 @@ p {
 
 .phone-img-container {
 	padding-right: 0;
+	padding-top: 0x;
 }
 
 .phone-img {
-	width: 60%;
 	transform: rotate(20deg);
-	
+	position: absolute;
+	padding: 20px;
+
 }
 
-.title {
-	padding-top: 115px;
-}
+/*.title {
+	padding-top: 4rem;
+}*/
 
 /* FEATURES SECTION */
 
 #features {
 	text-align: center;
 	width: 75%;
-	margin: 50px auto 50px auto;
+	margin: 0 auto 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+	position: relative;
 }
 
 .feature-box {
@@ -93,6 +101,7 @@ p {
 	background: #ef8172;
 	text-align: center;
 	color: white;
+	position: relative;
 }
 
 .carousel-item {
@@ -127,4 +136,17 @@ p {
 
 .price-col {
 	padding: 20px;
+}
+
+@media (max-width: 1028px) {
+
+	#title-section {
+		text-align: center;
+
+	}
+
+	.phone-img {
+		position: static;
+		transform: rotate(0);
+	}
 }
